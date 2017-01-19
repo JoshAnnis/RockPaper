@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace RockPaper
 {
-    class Program
+    class Player
     {
-        static void Main(string[] args)
-        {
-            RockPaper Rock = new RockPaper();
-            Rock.StartGame();
-        }
     }
 }
