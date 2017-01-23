@@ -11,7 +11,7 @@ namespace RockPaper
         static void Main(string[] args)
         {
             RockPaper Rock = new RockPaper();
-            Rock.StartGame();
+            Rock.StartGame();                     
         }
     }
 }
