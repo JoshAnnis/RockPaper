@@ -23,7 +23,7 @@ namespace RockPaper
         public int CompScore = 0;
         Player playerone;
         Player playertwo;
-       
+
 
 
         public void StartGame()
@@ -46,10 +46,10 @@ namespace RockPaper
                     playerone = new Human();
                     playertwo = new AI();
                     Player1choice = playerone.Getchoice();
-                    Player2choice= playertwo.Compinput();
+                    Player2choice = playertwo.Compinput();
                     GetWinner();
                     getScore();
-                  
+
                     break;
 
                 case "2":
@@ -61,13 +61,13 @@ namespace RockPaper
                     Player2choice = playertwo.Getchoice();
                     GetWinner();
                     getScore();
-                  
+
                     break;
             }
 
 
-        }      
-            public void GetWinner()
+        }
+        public void GetWinner()
         {
             if ((Player1choice == "R") && (Player2choice == "S") || (Player2choice == "L"))
             {
@@ -91,7 +91,7 @@ namespace RockPaper
             else if ((Player1choice == "S") && (Player2choice == "P") || (Player2choice == "L"))
 
             {
-                
+
                 Console.WriteLine("PlayerOne Wins");
                 Console.ReadLine();
                 Player1Score++;
@@ -124,7 +124,7 @@ namespace RockPaper
 
                 Console.WriteLine("Its a draw");
                 Console.ReadLine();
-                
+
 
             }
 
@@ -134,12 +134,12 @@ namespace RockPaper
 
                 Console.WriteLine("Player two wins this round ");
                 Console.ReadLine();
-                Player2Score ++;
+                Player2Score++;
 
 
             }
         }
-        
+
 
 
         public void getScore()
@@ -147,18 +147,28 @@ namespace RockPaper
             if (Player1Score == 2)
             {
                 Console.WriteLine("Player One wins the game");
+                Console.WriteLine("Would you like to play again? yes or 'no'");
+                string GameOver = Console.ReadLine();
+                if (GameOver == "yes")
+                    {
+                    StartGame();
+                    }
+                else
+                {
+
+                }
             }
-            else if (Player2Score== 2)
+            else if (Player2Score == 2)
             {
                 Console.WriteLine("Player two wins the game");
                 Console.WriteLine("Would you like to play again? yes or 'no'");
-                string GameOver = Console.ReadLine();
-                 if(GameOver == "yes")
-               {
-                   StartGame();
+                string EndGame = Console.ReadLine();
+                if (EndGame == "yes")
+                {
+                    StartGame();
                 }
-                 else
-                    {
+                else
+                {
 
                 }
             }
@@ -173,7 +183,7 @@ namespace RockPaper
 
 
 
+            }
+
         }
-            
     }
-}

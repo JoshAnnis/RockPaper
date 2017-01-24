@@ -22,7 +22,7 @@ namespace RockPaper
             if (Choice == "R")
             {
 
-                return ("Rock");
+                return ("R");
 
             }
 

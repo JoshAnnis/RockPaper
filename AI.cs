@@ -15,24 +15,24 @@ namespace RockPaper
             int number = rnd.Next(0, 5);
             if (number == 1)
             {
-
-               return("Rock");
+                Console.WriteLine("the computer choose Rock");
+               return("R");
                
 
             }
 
             else if (number == 2)
             {
-
-                return("Paper");
+                Console.WriteLine("The computer choose Paper");
+                return("P");
              
 
             }
 
             else if (number == 3)
             {
-
-                return("Scissors");
+                Console.WriteLine("The computer choose Sicssors");
+                return ("S");
                 
 
             }
@@ -41,8 +41,8 @@ namespace RockPaper
 
             else if (number == 4)
             {
-
-                return("Lizard");
+                Console.WriteLine("The computer choose Lizard");
+                return ("L");
                 
                
 
@@ -53,8 +53,8 @@ namespace RockPaper
             else
 
             {
-
-               return("Spock");
+                Console.WriteLine("The computer choose Spock");
+                return ("SP");
                 
 
             }
