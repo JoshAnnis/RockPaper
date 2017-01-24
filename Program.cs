@@ -10,8 +10,8 @@ namespace RockPaper
     {
         static void Main(string[] args)
         {
-            RockPaper Rock = new RockPaper();
-            Rock.StartGame();                     
+            Game game = new Game();
+            game.StartGame();                     
         }
     }
 }
