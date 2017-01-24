@@ -48,7 +48,8 @@ namespace RockPaper
                     Player1choice = playerone.Getchoice();
                     Player2choice= playertwo.Compinput();
                     GetWinner();
-                    StartGame();
+                    getScore();
+                  
                     break;
 
                 case "2":
@@ -59,6 +60,8 @@ namespace RockPaper
                     Player1choice = playerone.Getchoice();
                     Player2choice = playertwo.Getchoice();
                     GetWinner();
+                    getScore();
+                  
                     break;
             }
 
@@ -88,7 +91,7 @@ namespace RockPaper
             else if ((Player1choice == "S") && (Player2choice == "P") || (Player2choice == "L"))
 
             {
-
+                
                 Console.WriteLine("PlayerOne Wins");
                 Console.ReadLine();
                 Player1Score++;
@@ -101,7 +104,7 @@ namespace RockPaper
 
                 Console.WriteLine("PlayerOne Wins");
                 Console.ReadLine();
-                //Player1Score++;
+                Player1Score++;
 
             }
 
@@ -148,8 +151,21 @@ namespace RockPaper
             else if (Player2Score== 2)
             {
                 Console.WriteLine("Player two wins the game");
-            }
+                Console.WriteLine("Would you like to play again? yes or 'no'");
+                string GameOver = Console.ReadLine();
+                 if(GameOver == "yes")
+               {
+                   StartGame();
+                }
+                 else
+                    {
 
+                }
+            }
+            else
+            {
+                StartGame();
+            }
 
 
 

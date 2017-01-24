@@ -8,32 +8,32 @@ namespace RockPaper
 {
     class AI : Player
     {
-        public override void Compinput()
+        public override string Compinput()
 
         {
             Random rnd = new Random();
-            int number = rnd.Next(0, 6);
+            int number = rnd.Next(0, 5);
             if (number == 1)
             {
 
-                Console.WriteLine("the computer choose Rock");
-                Console.ReadLine();
+               return("Rock");
+               
 
             }
 
             else if (number == 2)
             {
 
-                Console.WriteLine("the computer choose Paper");
-                Console.ReadLine();
+                return("Paper");
+             
 
             }
 
             else if (number == 3)
             {
 
-                Console.WriteLine("the computer choose Scissors");
-                Console.ReadLine();
+                return("Scissors");
+                
 
             }
 
@@ -42,8 +42,9 @@ namespace RockPaper
             else if (number == 4)
             {
 
-                Console.WriteLine("the computer choose Lizard");
-                Console.ReadLine();
+                return("Lizard");
+                
+               
 
             }
 
@@ -53,8 +54,8 @@ namespace RockPaper
 
             {
 
-                Console.WriteLine("the computer choose Spock");
-                Console.ReadLine();
+               return("Spock");
+                
 
             }
 

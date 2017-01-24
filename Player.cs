@@ -16,6 +16,7 @@ namespace RockPaper
         public virtual string Compinput()
         {
             return "";
+
         }
     }
 }

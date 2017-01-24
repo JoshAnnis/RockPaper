@@ -30,25 +30,21 @@ namespace RockPaper
 
             {
 
-                return ("Scissors");
+                return ("S");
 
             }
 
             else if (Choice == "P")
-
             {
 
-                return ("Paper");
-
-
-
+                return(" P");
             }
-
+            
             else if (Choice == "L")
 
             {
 
-                return ("Lizard");
+                return ("");
 
             }
 
@@ -56,7 +52,7 @@ namespace RockPaper
 
             {
 
-                return ("Spock");
+                return ("SP");
 
             }
 
@@ -64,7 +60,7 @@ namespace RockPaper
 
             {
 
-                return ("");
+                return ("Please make a choice");
                 
 
 
